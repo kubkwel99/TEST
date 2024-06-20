@@ -1,3 +1,5 @@
+/** @format */
+
 // pages/api/videos/[id].js (or equivalent)
 import path from 'path';
 import fs from 'fs';
@@ -45,19 +47,19 @@ export default function handler(req, res) {
   } else {
     res.status(404).send('Video not found');
   }
-  // Example scenario where t should have a status() method
-let t = {
-    status: function() {
-        return 'Status is good';
-    }
-};
 
-// Check if t.status is callable before using it
-if (typeof t.status === 'function') {
+  // Example scenario where t should have a status() method
+  let t = {
+    status: function () {
+      return 'Status is good';
+    },
+  };
+
+  // Check if t.status is callable before using it
+  if (typeof t.status === 'function') {
     let currentStatus = t.status();
     console.log(currentStatus);
-} else {
+  } else {
     console.error('t.status is not a function');
-}
-
+  }
 }
