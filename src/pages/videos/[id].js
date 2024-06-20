@@ -1,7 +1,12 @@
-
 import path from 'path';
 
 export default function handler(req, res) {
+  // Check if id parameter exists in req.query
+  if (!req.query || !req.query.id) {
+    res.status(400).send('Missing id parameter');
+    return;
+  }
+  
   const { id } = req.query;
   const videoPath = path.join('path_to_videos_directory', `${id}.mp4`);
 
@@ -39,6 +44,7 @@ export default function handler(req, res) {
       });
       file.pipe(res);
     }
+
   } else {
     res.status(404).send('Video not found');
   }
