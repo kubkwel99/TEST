@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "app-router": "^0.0.8",
     "axios": "^1.7.2",
     "express": "^4.19.2",
     "next": "14.2.4",
+    "page-router": "^2.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-player": "^2.16.0",
