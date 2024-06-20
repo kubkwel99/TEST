@@ -2,7 +2,6 @@
 
 // pages/api/videos/[id].js (or equivalent)
 import path from 'path';
-import fs from 'fs';
 
 export default function handler(req, res) {
   const { id } = req.query;
