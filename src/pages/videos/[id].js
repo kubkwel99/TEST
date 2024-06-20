@@ -1,5 +1,6 @@
 import path from 'path';
 
+
 export default function handler(req, res) {
   // Check if id parameter exists in req.query
   if (!req.query || !req.query.id) {
