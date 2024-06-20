@@ -48,18 +48,4 @@ export default function handler(req, res) {
     res.status(404).send('Video not found');
   }
 
-  // Example scenario where t should have a status() method
-  let t = {
-    status: function () {
-      return 'Status is good';
-    },
-  };
-
-  // Check if t.status is callable before using it
-  if (typeof t.status === 'function') {
-    let currentStatus = t.status();
-    console.log(currentStatus);
-  } else {
-    console.error('t.status is not a function');
-  }
 }
