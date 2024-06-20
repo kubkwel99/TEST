@@ -1,6 +1,5 @@
 /** @format */
-
-// pages/portfolio.tsx
+'use client';
 
 import React from 'react';
 import { GetStaticProps } from 'next';

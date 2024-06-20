@@ -1,4 +1,4 @@
-// pages/_app.tsx
+'use client';
 
 import React from 'react';
 import { AppProps } from 'next/app';

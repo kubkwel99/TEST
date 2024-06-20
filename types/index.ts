@@ -1,4 +1,4 @@
-// types/index.ts
+'use client';
 
 export interface Video {
   id: number;

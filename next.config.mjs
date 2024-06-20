@@ -10,7 +10,9 @@ const nextConfig = {
             key: 'Content-Type',
             value: 'video/mp4', // Adjust MIME type based on your video format
           },
+          
         ],
+        
       },
     ];
   },
